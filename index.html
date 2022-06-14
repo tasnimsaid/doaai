@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>اليقين : سر الإستجابة </title>
+        <meta name="description" content="اليقين هو سر الإستجابة .الله أعزّ وأجل لوعندك يقين سيستجاب لك في كل وقت وحين ولكن لا تشرك بالله أدعوه وحده مثلما تصلي له وحده أقصد  يجب أن يكون لك خشوع والدعاء يكون من قلبك...ولكن لا تدعو على الناس بالسر 
+    إدعوا بالخير لك ولأمة محمد أجمعين لا تكن أناني فالله أكبر وهو الوارث وهو المستعان">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content=",قراءة القرآن في المنام,حلم رؤية قراءة القرآن في المنام,تفسير قراءة القرآن في المنام,القرآن في المنام,تفسير قراءة القرآن الكريم في الحلم,رؤية القرآن الكريم في المنام لابن سيرين,تفسير حلم رؤية قراءة القرآن علي شخص في المنام,المنام,القران في المنام,تفسير حلم القرآن في المنام,تفسير رؤية القران فى المنام,تفسير رؤية قراءة القران في المنام,تفسير حلم رؤية قراءة القرآن الكريم في المنام,في,في المنام,حلم القرآن في المنام,المصحف في المنام,تفسير القرآن في المنام,الله نور السموات والأرض,الله نور السماوات والارض,تفسير الله نور,خلف الله,سورة النور,فضل آية النور,تفسير آية النور,فوائد آية النور,العلاج بآية النور,سورة النور للشيخ البهتيمي,جامع الملك عبدالله,روحانيات آية النور,آية 35 من سورة النور,آية النور لقضاء الحاجة,اسم الله الأعظم,اسم الله الاعظم,الله,ما هو اسم الله الاعظم,أسماء الله الحسنى,#أسم الله الأعظم #حم عسق #القرآن الكريم #المهدى,اسم الله الاعظم الذي اذا دعي به اجاب,اسم الله الاعظم الذي اذا دعي به استجاب,رسول الله,الأعظم,اسماء الله الحسني,اسماء الله الحسنى,الاسم الاعظم,‘ حسن الظن بالله,افضل الدعاء عند الله,الرقية الشرعية كامله">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="ico_egyptiano.png">
+        <link rel="shortcut" href="ico_egyptiano.png">
+        <link rel="apple-touch-icon" href="ico_egyptiano1.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="clock">
+                <div class="circle" id="sc" style="--clr:#04fc43;">
+                    <i></i>
+                </div>
+                <div class="circle circle2" id="mn" style="--clr:#fee800;">
+                    <i></i>
+                </div>
+                <div class="circle  circle3" id="hr" style="--clr:#ff2972;">
+                    <i></i>
+                </div>
+                <span style="--i:1;">
+                    <b>1</b>
+                </span>
+                <span style="--i:2;">
+                    <b>2</b>
+                </span>
+                <span style="--i:3;">
+                    <b>3</b>
+                </span>
+                <span style="--i:4;">
+                    <b>4</b>
+                </span>
+                <span style="--i:5;">
+                    <b>5</b>
+                </span>
+                <span style="--i:6;">
+                    <b>6</b>
+                </span>
+                <span style="--i:7;">
+                    <b>7</b>
+                </span>
+                <span style="--i:8;">
+                    <b>8</b>
+                </span>
+                <span style="--i:9;">
+                    <b>9</b>
+                </span>
+                <span style="--i:10;">
+                    <b>10</b>
+                </span>
+                <span style="--i:11;">
+                    <b>11</b>
+                </span>
+                <span style="--i:12;">
+                    <b>12</b>
+                </span>
+
+
+
+
+</div>
+
+</div>
+<script>
+    const deg = 6;
+    const hr = document.querySelector(`#hr`);
+    const mn = document.querySelector(`#mn`);
+    const sc = document.querySelector(`#sc`);
+
+    setInterval(()=>{
+        let day = new Date();
+        let hh = day.getHours() * 30;
+        let mm = day.getMinutes() * deg;
+        let ss = day.getSeconds() * deg;
+
+        hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;
+        mn.style.transform = `rotateZ(${mm}deg)`;
+        sc.style.transform = `rotateZ(${ss}deg)`;
+
+        //marquee carlos
+
+        // digital clock
+        let hours = document.getElementById(`hours`);
+        let minutes = document.getElementById(`minutes`);
+        let seconds = document.getElementById(`seconds`);
+        let ampm = document.getElementById(`pm`);
+
+        let today = new Date();
+        let date = today.getDate();
+        let mon = today.getMonth();
+        let year = today.getFullYear();
+        let days = today.getDay();
+
+        let h = new Date().getHours();
+        let m = new Date().getMinutes();
+        let s = new Date().getSeconds();
+
+        let pm = h >= 12 ? "PM" : "AM";
+        // convert 24hr clock to 12hr clock
+        if (h < 12) {
+            h = h - 12;
+        }
+
+        // add zero before single digital number
+        h = (h < 10) ? "0" + h : h
+        m = (m < 10) ? "0" + m : m
+        s = (s < 10) ? "0" + s : s
+
+        hours.innerHTML = h;
+        minutes.innerHTML = m;
+        seconds.innerHTML = s;
+        ampm.innerHTML = am;
+
+        document.getElementById("hours").innerHTML = h;
+        document.getElementById("minutes").innerHTML = m;
+        document.getElementById("seconds").innerHTML = s;
+
+        document.getElementById("day").innerHTML = date;
+        document.getElementById("month").innerHTML = month[mon];
+        document.getElementById("year").innerHTML = year;
+
+        document.getElementById(`${week_days[days]}`).style.color = "#fff";
+
+    }
+    );
+</script>
+
+</body></html>
